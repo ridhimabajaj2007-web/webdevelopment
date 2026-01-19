@@ -294,13 +294,13 @@ body {
   .header {
     display: flex;
     padding: 15px 30px;
-    background: white;
+    background: rgb(25, 51, 59);
     align-items: center;
     gap: 20px;
   }
 
   .logo {
-    color: rgb(25, 51, 59);
+    color:white;
     font-size: 26px;
     font-weight: bold;
   }
