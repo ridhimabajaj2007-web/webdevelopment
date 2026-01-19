@@ -7,32 +7,37 @@
 }
 
 body {
-  background-color: #f7f3ee; /* light beige */
+  background-color: #f7f3ed;
   color: #222;
 }
 
 /* ================= HEADER ================= */
 .header {
-  background: #1f3c40;
-  padding: 15px 20px;
+  background-color: #1f3f44;
+  color: #fff;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .header ul {
   list-style: none;
-  color: #fff;
-  font-size: 20px;
-  font-weight: bold;
 }
 
-.header nav {
-  margin-top: 10px;
+.header li {
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 1.3;
 }
 
 .header nav a {
-  color: #fff;
+  color: white;
   text-decoration: none;
-  margin-right: 15px;
+  margin-left: 25px;
   font-size: 16px;
+  font-weight: 500;
 }
 
 .header nav a:hover {
@@ -42,7 +47,7 @@ body {
 /* ================= VIDEO SECTION ================= */
 .middle {
   width: 100%;
-  height: 60vh;
+  height: 80vh;
   overflow: hidden;
 }
 
@@ -54,59 +59,69 @@ body {
 
 /* ================= ABOUT TEXT ================= */
 .foodi {
-  position: relative;
-  padding: 40px 20px;
-  background: #fff;
+  padding: 80px 20px;
+  background-color: white;
   text-align: center;
 }
 
-.foodi h1 {
-  font-size: 32px;
-  margin-bottom: 15px;
+.overlay-text {
+  max-width: 900px;
+  margin: auto;
 }
 
-.foodi p {
-  max-width: 800px;
-  margin: auto;
-  line-height: 1.6;
-  font-size: 16px;
+.overlay-text h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.overlay-text p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #444;
 }
 
 /* ================= BANNER ================= */
 .about img {
   width: 100%;
+  height: auto;
   display: block;
 }
 
 /* ================= OPTIONS ================= */
 .options {
-  padding: 40px 20px;
+  padding: 60px 20px;
   text-align: center;
 }
 
 .options h2 {
-  font-size: 28px;
-  margin-bottom: 30px;
+  font-size: 32px;
+  margin-bottom: 40px;
 }
 
 .dcard-row {
   display: flex;
-  gap: 20px;
   justify-content: center;
+  gap: 30px;
   flex-wrap: wrap;
 }
 
 .dcard {
-  background: #fff;
-  width: 280px;
+  background: white;
+  width: 300px;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transition: transform 0.3s;
+}
+
+.dcard:hover {
+  transform: translateY(-5px);
 }
 
 .dcard img {
   width: 100%;
-  height: 180px;
+  height: 200px;
   object-fit: cover;
 }
 
@@ -116,51 +131,61 @@ body {
 }
 
 .dcard a {
-  display: block;
-  margin: 15px;
-  padding: 10px;
-  background: #1f3c40;
-  color: #fff;
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #1f3f44;
+  color: white;
   text-decoration: none;
-  border-radius: 6px;
+  border-radius: 5px;
 }
 
 .dcard a:hover {
-  background: #163034;
+  background-color: #163236;
 }
 
 /* ================= FOOTER ================= */
 .footer {
-  background: #1f3c40;
-  color: #fff;
+  background-color: #1f3f44;
+  color: white;
   text-align: center;
-  padding: 30px 20px;
+  padding: 40px 20px;
 }
 
 .footer h1 {
-  margin-bottom: 10px;
+  font-size: 28px;
 }
 
 .footer h3 {
+  font-size: 16px;
   font-weight: normal;
 }
 
-/* ================= MOBILE FIX ================= */
+/* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
 
-  .header ul {
-    font-size: 18px;
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header nav {
+    margin-top: 15px;
+  }
+
+  .header nav a {
+    margin: 0 10px;
   }
 
   .middle {
-    height: 40vh;
+    height: 50vh;
   }
 
-  .foodi h1 {
-    font-size: 26px;
+  .overlay-text h1 {
+    font-size: 28px;
   }
 
-  .options h2 {
-    font-size: 24px;
+  .overlay-text p {
+    font-size: 16px;
   }
 }
