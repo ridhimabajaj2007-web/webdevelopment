@@ -144,12 +144,21 @@ body {
   background-color: #163236;
 }
 
+/
+/*==================Info ====================*/
+
+.info{
+  background-color: black;
+  color:#ddd;
+  padding:40px 20px ;
+  text-align: left;
+}
 /* ================= FOOTER ================= */
 .footer {
-  background-color: #1f3f44;
+  background-color: black;
   color: white;
   text-align: center;
-  padding: 40px 20px;
+  padding: 20px;
 }
 
 .footer h1 {
