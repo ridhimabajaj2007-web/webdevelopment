@@ -195,7 +195,7 @@ body {
 
 @media (max-width: 768px) {
   .inf {
-    text-align: center;
+    text-align: left;
     padding: 30px 15px;
   }
 }
