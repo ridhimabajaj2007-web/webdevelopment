@@ -144,13 +144,12 @@ body {
   background-color: #163236;
 }
 
-/
+
 /*==================Info ====================*/
 
-.info{
+.info {
   background-color: black;
-  color:#ddd;
-  padding:40px 20px ;
+  padding : 40px 20px ;
   text-align: left;
 }
 /* ================= FOOTER ================= */
