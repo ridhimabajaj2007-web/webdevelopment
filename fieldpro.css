@@ -146,42 +146,57 @@ body {
 
 
 /*==================Info ====================*/
+/* ================= INFO SECTION ================= */
 
 .inf {
-  background-color: black;
-  padding : 40px ;
+  background-color: black;   /* dark greenish (not pure black) */
+  padding: 40px 20px;
   text-align: left;
 }
 
-.inf h2{
-  color:#ddd;
-  font-weight: normal;
-  font-family:Arial, Helvetica, sans-serif;
-
-
+.inf h2 {
+  color: #f5f5f5;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 12px;
 }
-.inf h3{
-  color:#ddd;
-  font-weight: normal;
-  font-family:Arial, Helvetica, sans-serif;
-  
 
+.inf h3 {
+  color: #dddddd;
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 8px;
 }
+
+.inf p,
+.inf a {
+  color: #cccccc;
+  font-size: 14px;
+  line-height: 1.6;
+  text-decoration: none;
+}
+
+.inf a:hover {
+  color: #f4c430;
+}
+
 /* ================= FOOTER ================= */
+
 .footer {
-  background-color: black;
-  color: white;
+  background-color: #0b1f1f;
+  color: #ffffff;
   text-align: center;
-  padding: 20px;
+  padding: 20px 10px;
+  font-size: 14px;
 }
 
-.footer h1 {
-  font-size: 28px;
-}
+/* ================= MOBILE FIX ================= */
 
-.footer h3 {
-  font-size: 16px;
-  font-weight: normal;
+@media (max-width: 768px) {
+  .inf {
+    text-align: center;
+    padding: 30px 15px;
+  }
 }
 
 /* ================= RESPONSIVE ================= */
